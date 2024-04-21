@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #0b667c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.home-inicio{
+    background-color: #0c3944;
+}
+
+strong{
+    color: #d2f827;
+}
+
+.profile-image{
+    width: 200px;
+    border-radius: 350px;
+    margin-right: 20px;
+    padding: 5px;
+    border: 2px solid #0b667c;
+}
+
+.text{
+    flex: 1;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: #fff;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.habilidades-meio{
+    background-color: #041013;
+}
+
+.portifolio-fim{
+    background-color: #012129;
+}
+
+.skills{
+    width: 250px;
+    height: 250px;
+    background-color: #0b667c;
+    border: none;
+    padding: 20px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.skills:hover{
+    background-color: #141516;
+    color: #fff;
+}
+
+h2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.sobremim-meio{
+    background-color: #012129;
+}
+
+.skills-formacao{
+    width: 350px;
+    height: 90px;
+    background-color: #055e77;
+    border: none;
+    padding: 25px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    list-style: none;
+    transition: background-color 0.3s;
+}
+
+.skills-formacao:hover{
+    background-color: #141516;
+    color: #fff;
+}
+
+.skills-projetos{
+    width: 350px;
+    height: 80px;
+    background-color: #0b667c;
+    border: none;
+    padding: 25px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    list-style: none;
+    transition: background-color 0.3s;
+}
+
+.skills-projetos:hover{
+    background-color: #141516;
+    color: #fff;
+}
+
+.skills-formacao li{
+    margin-bottom: 10px;
+}
+
+.skills-projetos a{
+    text-align: center;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.skills-projetos a:visited{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.skills-projetos a:hover{
+    color: #2c60ce;
+    text-decoration: underline;
+}
+
+.skills-projetos a:active{
+    color: #2c60ce;
+    text-decoration: underline;
+}
+
+.skills-formacao p{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills img{
+    width: 90px;
+    margin-right: 10px;
+}
+
+.skills p{
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact-informacao{
+    background-color: #0b667c;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contact-informacao h2{
+    color: #fff;
+    display: flex;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-informacao li{
+    margin-bottom: 0;
+}
+
+.contact-informacao i{
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.contact-informacao a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-informacao a:visited{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-informacao a:hover{
+    color: #2c60ce;
+    text-decoration: underline;
+}
+
+.contact-informacao a:active{
+    color: #2c60ce;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image{
+        margin-bottom: 20px;
+    }
+
+    .text{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .skills-container{
+        margin-left: 0;
+    }
+
+    .skills{
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+}
